@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulario web</title>
+</head>
+<body>
+    <form class="form-registro">
+    <h4>Formulario de registro</h4>
+    <select class="controls" name="tipo_documento" id="tipo_documento" required>
+        <option value="">Selecciones su tipo de documento</option>
+        <option value="CC">CC</option>
+        <option value="TI">TI</option>
+        <option value="RC">RC</option>
+        <option value="CE">CE</option>
+        <option value="Pasaporte">Pasaporte</option>
+    </select>
+
+    <input class="controls" type="number" name="numero de docuemnto" id="numero de documento" placeholder="ingrese su numero de documento"required min="0" max="9999999999">
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingrese su nombre"required minlength="3" maxlength="64">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="ingrese su apellido"required minlength="3" maxlength="64">
+    <input class="controls" type="text" name="direccion" id="direccion" placeholder="ingrese su direccion"required>
+    <input class="controls" type="number" name="telefono_fijo" id="telefono_fijo" placeholder="ingrese su telefono fijo"required min="0" max="9999999999">
+    <input class="controls" type="number" name="telefono_celular" id="telefono_celular" placeholder="ingrese su telefono celular"required min="0" max="9999999999">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="ingrese su correo" pattern="[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required>
+    <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="ingrese su contraseña"pattern="(?=.*[A-Z])(?=(?:.*[a-z]){2,})(?=(?:.*[0-9]){5,})[A-Za-z0-9!?\-+\/&$]{16}"title="Debe tener 16 caracteres, 1 mayúscula, 2 minúsculas, 5 números y puede incluir !?-+/&$"required>
+    <input class="controls" type="date" name="fecha_de_inscripcion" id="fecah_de_inscripcion" placeholder="ingrese la fecha de inscripcion" min="2026-02-15" max="2026-03-03" required>
+    <input class="controls" type="text" name="hobbie" id="hobbie" placeholder="ingrese su hobbie"required>
+
+    <p>Estoy de acurdo con <a href="#">terminos y condiciones</a>  </p>
+    <input class="botons" type="submit" value="Registrar">
+    <input class="botons" type="reset" value="Limpiar">
+    <p> <a href="#">¿ya tengo cuenta?</a></p>
+    </form>
+
+</body>
+</html>

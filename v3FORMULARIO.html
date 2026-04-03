@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form-registro" id="formRegistro">
+      <h4>Formulario de registro</h4>
+
+      <select class="controls" name="tipo_documento" id="tipo_documento">
+        <option value="">Seleccione su tipo de documento</option>
+        <option value="CC">CC</option>
+        <option value="TI">TI</option>
+        <option value="RC">RC</option>
+        <option value="CE">CE</option>
+        <option value="Pasaporte">Pasaporte</option>
+      </select>
+      <small class="error" id="error_tipo_documento"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="numero_documento"
+        id="numero_documento"
+        placeholder="Ingrese su número de documento"
+      />
+      <small class="error" id="error_numero_documento"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="nombres"
+        id="nombres"
+        placeholder="Ingrese su nombre"
+      />
+      <small class="error" id="error_nombres"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="apellidos"
+        id="apellidos"
+        placeholder="Ingrese su apellido"
+      />
+      <small class="error" id="error_apellidos"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="direccion"
+        id="direccion"
+        placeholder="Ingrese su dirección"
+      />
+      <small class="error" id="error_direccion"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="telefono_fijo"
+        id="telefono_fijo"
+        placeholder="Ingrese su teléfono fijo"
+      />
+      <small class="error" id="error_telefono_fijo"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="telefono_celular"
+        id="telefono_celular"
+        placeholder="Ingrese su teléfono celular"
+      />
+      <small class="error" id="error_telefono_celular"></small>
+
+      <input
+        class="controls"
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="Ingrese su correo"
+      />
+      <small class="error" id="error_correo"></small>
+
+      <input
+        class="controls"
+        type="password"
+        name="contrasena"
+        id="contrasena"
+        placeholder="Ingrese su contraseña"
+      />
+      <small class="error" id="error_contrasena"></small>
+
+      <input
+        class="controls"
+        type="password"
+        name="confirmar_contrasena"
+        id="confirmar_contrasena"
+        placeholder="Confirme su contraseña"
+      />
+      <small class="error" id="error_confirmar_contrasena"></small>
+
+      <input
+        class="controls"
+        type="date"
+        name="fecha_de_inscripcion"
+        id="fecha_de_inscripcion"
+      />
+      <small class="error" id="error_fecha_de_inscripcion"></small>
+
+      <input
+        class="controls"
+        type="text"
+        name="hobbie"
+        id="hobbie"
+        placeholder="Ingrese su hobbie"
+      />
+      <small class="error" id="error_hobbie"></small>
+
+      <label class="terminos">
+        <input type="checkbox" id="terminos" />
+        Estoy de acuerdo con <a href="#">términos y condiciones</a>
+      </label>
+      <small class="error" id="error_terminos"></small>
+
+      <input class="botons" type="submit" value="Registrar" />
+      <input class="botons" type="reset" value="Limpiar" />
+
+      <p><a href="#">¿Ya tengo cuenta?</a></p>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+.contenedor{
+width:800px;
+margin:auto;
+display:flex;
+background:white;
+border-radius:10px;
+overflow:hidden;
+}
+
+.lado-izquierdo{
+width:35%;
+background:#2b2e3b;
+color:white;
+padding:20px;
+}
+
+.perfil{
+text-align:center;
+}
+
+.perfil img{
+width:120px;
+height:120px;
+border-radius:50%;
+border:4px solid white;
+}
+
+.seccion{
+margin-top:20px;
+}
+
+.seccion h3{
+border-bottom:1px solid white;
+padding-bottom:5px;
+}
+
+.lado-derecho{      
+width:70%;
+padding:30px;
+}
+
+.lado-derecho h1{
+margin-bottom:5px;
+}
+
+.lado-derecho h4{
+margin-top:20px;
+color:#333;
+}
+
+h4::before{
+content: "● ";
+font-size: 22px;
+color: black;
+margin-right: 8px;
+}
+
+ul{
+margin-left:20px;
+}
